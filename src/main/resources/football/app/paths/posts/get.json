@@ -1,0 +1,21 @@
+{
+    "tags": [
+        "posts","visitor","get"
+    ],
+    "summary": "根据搜索条件获取Post列表",
+    "description": "根据搜索条件获取Post列表，每次搜索不能超过30条",
+    "operationId": "getPostList",
+    "parameters": [
+    ],
+    "responses": {
+        "200":{
+            "description":"Post列表响应对象",
+            "schema":{
+                "type": "array",
+		                "items": {
+		                    "$ref": "#/definitions/Post"
+		                }
+            }
+        },
+    }
+}
